@@ -38,8 +38,7 @@ const Layout: FC<Props> = ({ children, ...props }) => (
             </Flex>
 
             <Footer
-                bgColor={useColorModeValue("lingva.100", "lingva.900")}
-                color={useColorModeValue("lingva.900", "lingva.100")}
+                colorScheme="gray"
             />
         </VStack>
     </>

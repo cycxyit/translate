@@ -21,7 +21,7 @@ export default extendTheme({
         useSystemColorMode: true
     },
     styles:{
-  global: (props:string) => ({
+  global: (props) => ({
     body: {
       bg: mode("#f8f8f5", "#202023")(props),
       fontFamily:
@@ -31,7 +31,6 @@ export default extendTheme({
   }),
 },
     components: {
-
         Textarea: {
             variants: {
                 outline: props => ({

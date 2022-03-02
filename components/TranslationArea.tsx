@@ -27,9 +27,11 @@ const TranslationArea: FC<Props> = ({ value, onChange, onSubmit, readOnly, audio
         <Box
             position="relative"
             w="full"
+
         >
             <Textarea
                 value={value}
+                colorScheme="gray"
                 onChange={onChange}
                 readOnly={readOnly}
                 dir="auto"
@@ -77,6 +79,7 @@ const TranslationArea: FC<Props> = ({ value, onChange, onSubmit, readOnly, audio
                 m="auto"
                 thickness="2px"
                 label="Loading translation"
+                colorScheme="gray"
                 {...spinnerProps}
             />}
         </Box>

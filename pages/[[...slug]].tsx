@@ -170,12 +170,14 @@ const Page: FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ home, transl
                             w={["full", null, "auto"]}
                         />
                         <AutoTranslateButton
+                            borderRadius="full"
                             onAuto={useCallback(() => changeRoute(delayedQuery), [delayedQuery, changeRoute])}
                             isDisabled={isLoading}
                             w={["full", null, "auto"]}
                         />
                     </Stack>
                     <TranslationArea
+                      
                         id="translation"
                         aria-label="Translation result"
                         placeholder="Translation"

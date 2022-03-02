@@ -24,7 +24,7 @@ const Layout: FC<Props> = ({ children, ...props }) => (
 
         <VStack minH="100vh" spacing={8}>
             <Header
-                bgColor={useColorModeValue("lingva.100", "lingva.900")}
+                colorScheme="gray"
             />
 
             <Flex

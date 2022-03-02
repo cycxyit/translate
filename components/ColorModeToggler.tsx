@@ -12,10 +12,11 @@ const ColorModeToggler: FC<Props> = (props) => {
     useHotkeys("ctrl+shift+l, command+shift+l", toggleColorMode, [toggleColorMode]);
     return (
         <IconButton
-            aria-label="Toggle color mode"
-            icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-            colorScheme="lingva"
-            onClick={toggleColorMode}
+         
+         aria-label="Toggle Theme"
+          borderRadius="999px"
+          colorScheme={useColorModeValue("gray", "telegram")}
+          icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
             {...props}
         />
     );

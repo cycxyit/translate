@@ -12,10 +12,7 @@ type Props = {
 
 const Header: FC<Props> = (props) => (
     <>
-        <Head>
-            <link rel="prefetch" href="/banner_light.svg" />
-            <link rel="prefetch" href="/banner_dark.svg" />
-        </Head>
+    
 
         <Flex
             as="header"
@@ -28,11 +25,8 @@ const Header: FC<Props> = (props) => (
         >
             <NextLink href="/" passHref={true}>
                 <Link display="flex">
-                    <Image
-                        src={useColorModeValue("/banner_light.svg", "/banner_dark.svg")}
-                        alt="Logo"
-                        width={110}
-                        height={64}
+                    <Text
+                        fontSize="xl"
                     />
                 </Link>
             </NextLink>
@@ -46,7 +40,8 @@ const Header: FC<Props> = (props) => (
                     isExternal={true}
                     aria-label="GitHub"
                     icon={<FaGithub />}
-                    colorScheme="lingva"
+                    colorScheme="gray"
+                    borderRadius="full"
                     variant={useColorModeValue("outline", "solid")}
                 />
             </HStack>

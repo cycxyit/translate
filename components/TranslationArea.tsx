@@ -20,8 +20,9 @@ const TranslationArea: FC<Props> = ({ value, onChange, onSubmit, readOnly, audio
     const spinnerProps = {
         size: useBreakpointValue(["lg", null, "xl"]) ?? undefined,
         color: useColorModeValue("lingva.500", "lingva.200"),
-        emptyColor: useColorModeValue("gray.300", "gray.600")
-    };
+        emptyColor: useColorModeValue("gray.300", "gray.600"),
+bColor: useColorModeValue("gray.100", "gray.600")
+    }
 
     return (
         <Box
@@ -34,6 +35,7 @@ const TranslationArea: FC<Props> = ({ value, onChange, onSubmit, readOnly, audio
                 colorScheme="gray"
                 onChange={onChange}
                 readOnly={readOnly}
+                borderColor={bColor}
                 dir="auto"
                 resize="none"
                 rows={useBreakpointValue([6, null, 12]) ?? undefined}

@@ -162,7 +162,7 @@ const Page: FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ home, transl
                         <IconButton
                             aria-label="Translate"
                             icon={<HiTranslate />}
-                              colorScheme="gray"
+                              
                         borderRadius="full"
                             variant="outline"
                             onClick={() => changeRoute(query)}

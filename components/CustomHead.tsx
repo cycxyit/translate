@@ -8,8 +8,8 @@ type Props = {
     home?: true
 };
 
-const title = "Lingva Translate";
-const description = "Alternative front-end for Google Translate, serving as a Free and Open Source translator with over a hundred languages available";
+const title = "Translate";
+const description = "translate";
 
 const siteDomain = process.env["NEXT_PUBLIC_SITE_DOMAIN"];
 const url = siteDomain && (siteDomain.includes("localhost") ? "http://" : "https://") + siteDomain;
@@ -47,9 +47,7 @@ const CustomHead: FC<Props> = ({ customTitle, home }) => {
             <meta property="og:image:height" content="512" />
             <meta property="og:image:alt" content={title} />
 
-            <meta property="twitter:card" content="summary" />
-            <meta property="twitter:creator" content="@thedaviddelta" />
-        </Head>
+                   </Head>
     );
 };
 

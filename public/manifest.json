@@ -1,6 +1,6 @@
 {
-  "name": "Lingva Translate",
-  "short_name": "Lingva",
+  "name": "Translate",
+  "short_name": "TR",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

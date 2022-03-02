@@ -25,6 +25,7 @@ const Layout: FC<Props> = ({ children, ...props }) => (
         <VStack minH="100vh" spacing={8}>
             <Header
                 colorScheme="gray"
+css={{ backdropFilter: "blur(10px)" }}
             />
 
             <Flex

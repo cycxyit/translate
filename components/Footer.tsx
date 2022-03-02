@@ -19,7 +19,7 @@ const Footer: FC<Props> = (props) => (
         spacing={[1, null, 2]}
         {...props}
     >
-        <Link href="https://github.com/TheDavidDelta/lingva-translate/blob/main/LICENSE" isExternal={true}>
+        <Link href="https://github.com/xuwillie/trans/blob/main/LICENSE" isExternal={true}>
             <Text as="span">&#169; Willie</Text>
         </Link>
         <Text as="span" display={["none", null, "unset"]}>·</Text>

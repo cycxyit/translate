@@ -133,7 +133,8 @@ const Page: FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ home, transl
                     <IconButton
                         aria-label="Switch languages"
                         icon={<FaExchangeAlt />}
-                        colorScheme="lingva"
+                        colorScheme="gray"
+                        borderRadius="full"
                         variant="ghost"
                         onClick={() => dispatch({ type: Actions.SWITCH_LANGS })}
                         isDisabled={!canSwitch}
@@ -161,7 +162,8 @@ const Page: FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ home, transl
                         <IconButton
                             aria-label="Translate"
                             icon={<HiTranslate />}
-                            colorScheme="lingva"
+                              colorScheme="gray"
+                        borderRadius="full"
                             variant="outline"
                             onClick={() => changeRoute(query)}
                             isDisabled={isLoading}

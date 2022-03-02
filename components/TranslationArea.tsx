@@ -51,7 +51,7 @@ const TranslationArea: FC<Props> = ({ value, onChange, onSubmit, readOnly, audio
                             aria-label="Copy to clipboard"
                             icon={hasCopied ? <FaCheck /> : <FaCopy />}
                             onClick={onCopy}
-                            colorScheme="lingva"
+                            colorScheme="gray"
                             variant="ghost"
                             disabled={!value}
                         />
@@ -62,7 +62,7 @@ const TranslationArea: FC<Props> = ({ value, onChange, onSubmit, readOnly, audio
                         aria-label={isAudioPlaying ? "Stop audio" : "Play audio"}
                         icon={isAudioPlaying ? <FaStop /> : <FaPlay />}
                         onClick={onAudioClick}
-                        colorScheme="lingva"
+                        colorScheme="gray"
                         variant="ghost"
                         disabled={!audioExists}
                     />
@@ -75,7 +75,7 @@ const TranslationArea: FC<Props> = ({ value, onChange, onSubmit, readOnly, audio
                 left="0"
                 right="0"
                 m="auto"
-                thickness="3px"
+                thickness="2px"
                 label="Loading translation"
                 {...spinnerProps}
             />}

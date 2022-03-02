@@ -38,7 +38,7 @@ const Layout: FC<Props> = ({ children, ...props }) => (
             </Flex>
 
             <Footer
-                colorScheme="telegram"
+   
             />
         </VStack>
     </>

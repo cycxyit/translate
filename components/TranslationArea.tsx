@@ -21,7 +21,6 @@ const TranslationArea: FC<Props> = ({ value, onChange, onSubmit, readOnly, audio
         size: useBreakpointValue(["lg", null, "xl"]) ?? undefined,
         color: useColorModeValue("lingva.500", "lingva.200"),
         emptyColor: useColorModeValue("gray.300", "gray.600"),
-bColor: useColorModeValue("gray.100", "gray.600")
     }
 
     return (
@@ -35,7 +34,7 @@ bColor: useColorModeValue("gray.100", "gray.600")
                 colorScheme="gray"
                 onChange={onChange}
                 readOnly={readOnly}
-                borderColor={bColor}
+                borderColor={useColorModeValue("gray.100", "gray.600")}
                 dir="auto"
                 resize="none"
                 rows={useBreakpointValue([6, null, 12]) ?? undefined}

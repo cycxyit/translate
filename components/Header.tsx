@@ -1,7 +1,6 @@
 import { FC } from "react";
-import Head from "next/head";
 import NextLink from "next/link";
-import { Flex, HStack, IconButton, Link, useColorModeValue } from "@chakra-ui/react";
+import { Text, Flex, HStack, IconButton, Link, useColorModeValue } from "@chakra-ui/react";
 import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
 import { ColorModeToggler } from ".";
@@ -27,7 +26,10 @@ const Header: FC<Props> = (props) => (
                 <Link display="flex">
                     <Text
                         fontSize="xl"
-                    />
+                    >
+Translate
+</Text>
+
                 </Link>
             </NextLink>
             <HStack spacing={3}>

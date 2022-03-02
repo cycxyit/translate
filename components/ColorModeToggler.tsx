@@ -17,6 +17,7 @@ const ColorModeToggler: FC<Props> = (props) => {
           borderRadius="999px"
           colorScheme={useColorModeValue("gray", "telegram")}
           icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
+onClick={toggleColorMode}
             {...props}
         />
     );

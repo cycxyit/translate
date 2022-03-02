@@ -31,12 +31,7 @@ export default extendTheme({
   }),
 },
     components: {
-Link: {
-    basestyle: (props) => ({
-      color: mode("#3d7aed", "#ff63c3")(props),
-      textUnderlinOffset: 3,
-    }),
-  },
+
         Textarea: {
             variants: {
                 outline: props => ({

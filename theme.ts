@@ -28,6 +28,9 @@ export default extendTheme({
         '-ui-monospace,SFMono-Regular,"SF Mono, Menlo",Consolas,Liberation Mono,monospace',
       lineHeight: 'base',
     },
+':focus:not(:focus-visible):not([role="dialog"])' : {
+        shadow:mode( "0 0 0 2px var(--chakra-colors-gray-50)", "0 0 0 3px var(--chakra-colors-gray-600)")(props),
+     }
   }),
 },
     components: {

@@ -20,20 +20,13 @@ const Footer: FC<Props> = (props) => (
         {...props}
     >
         <Link href="https://github.com/TheDavidDelta/lingva-translate/blob/main/LICENSE" isExternal={true}>
-            <Text as="span">&#169; 2021 TheDavidDelta & contributors</Text>
+            <Text as="span">&#169; Willie</Text>
         </Link>
         <Text as="span" display={["none", null, "unset"]}>·</Text>
         <Link href="https://www.gnu.org/licenses/agpl-3.0.html" isExternal={true}>
             <Text as="span">Licensed under AGPLv3</Text>
         </Link>
-        {vercelSponsor && (
-            <>
-                <Text as="span" display={["none", null, "unset"]}>·</Text>
-                <Link href="https://vercel.com?utm_source=lingva-team&utm_campaign=oss" isExternal={true}>
-                    <Text as="span">▲ Powered by Vercel</Text>
-                </Link>
-            </>
-        )}
+     
     </Stack>
 );
 

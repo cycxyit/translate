@@ -21,7 +21,7 @@ export default extendTheme({
         useSystemColorMode: true
     },
     styles:{
-  global: (props) => ({
+  global: (props:string) => ({
     body: {
       bg: mode("#f8f8f5", "#202023")(props),
       fontFamily:

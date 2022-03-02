@@ -20,6 +20,16 @@ export default extendTheme({
         initialColorMode: process.env["DEFAULT_DARK_THEME"] === "true" ? "dark" : "light",
         useSystemColorMode: true
     },
+    styles:{
+  global: (props) => ({
+    body: {
+      bg: mode("#f8f8f5", "#202023")(props),
+      fontFamily:
+        '-ui-monospace,SFMono-Regular,"SF Mono, Menlo",Consolas,Liberation Mono,monospace',
+      lineHeight: 'base',
+    },
+  }),
+},
     components: {
         Textarea: {
             variants: {

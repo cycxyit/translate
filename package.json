@@ -12,8 +12,8 @@
     "cy:run": "cypress run"
   },
   "dependencies": {
-    "@chakra-ui/icons": "latest",
-    "@chakra-ui/react": "latest",
+    "@chakra-ui/icons": "1.0.15",
+    "@chakra-ui/react": "1.6.6",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "apollo-server-micro": "^2.25.2",

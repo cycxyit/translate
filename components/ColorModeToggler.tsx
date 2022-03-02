@@ -15,7 +15,7 @@ const ColorModeToggler: FC<Props> = (props) => {
          
          aria-label="Toggle Theme"
           borderRadius="999px"
-          colorScheme={useColorModeValue("gray", "telegram")}
+          colorScheme="gray"
           icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
 onClick={toggleColorMode}
             {...props}

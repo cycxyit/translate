@@ -20,7 +20,7 @@ const Footer: FC<Props> = (props) => (
         {...props}
     >
         <Link href="https://github.com/xuwillie/trans/blob/main/LICENSE" isExternal={true}>
-            <Text as="span">&#169; Willie</Text>
+            <Text as="span">&#169; {new Date().getFullYear()} Wll Translate</Text>
         </Link>
         <Text as="span" display={["none", null, "unset"]}>·</Text>
         <Link href="https://www.gnu.org/licenses/agpl-3.0.html" isExternal={true}>

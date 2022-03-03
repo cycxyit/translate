@@ -10,33 +10,7 @@ type Props = {
 
 const Header: FC<Props> = (props) => (
     <>
-    
-
-        <Flex
-            as="header"
-            py={3}
-            justify="space-around"
-            align="center"
-            w="full"
-            {...props}
-        >
-            <NextLink href="/" passHref={true}>
-                <Link display="flex">
-                    <Text
-                        fontSize="xl"
-                    >
-Translate
-</Text>
-
-                </Link>
-            </NextLink>
-            <HStack spacing={1}>
-                <ColorModeToggler
-                    variant={useColorModeValue("outline", "solid")}
-                />
-               
-            </HStack>
-        </Flex>
+   
 <Box
       position="fixed"
       as="nav"

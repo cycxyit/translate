@@ -2,7 +2,7 @@ import { useEffect, useReducer, useCallback, FC, ChangeEvent } from "react";
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
 import Router from "next/router";
 import dynamic from "next/dynamic";
-import { Stack, VStack, HStack, IconButton } from "@chakra-ui/react";
+import { Stack, VStack, HStack, IconButton, useColorModeValue } from "@chakra-ui/react";
 import { FaExchangeAlt } from "react-icons/fa";
 import { HiTranslate } from "react-icons/hi";
 import { useHotkeys } from "react-hotkeys-hook";
@@ -164,8 +164,7 @@ const Page: FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ home, transl
                             borderRadius="full"
                             onAuto={useCallback(() => changeRoute(delayedQuery), [delayedQuery, changeRoute])}
                             isDisabled={isLoading}
-                      
-                            
+                            bg={useColorModeValue("#ffffff80", "20202380")}
                         />
 <IconButton
                             aria-label="Translate"

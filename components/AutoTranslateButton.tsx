@@ -25,11 +25,11 @@ const AutoTranslateButton: FC<Props> = ({ onAuto, ...props }) => {
     }, [isAuto, onAuto]);
 
     return (
-<ButtonGroup isAttached variant='outline' colorScheme="gray" variant={isAuto ? "solid" : "outline"}
+<ButtonGroup isAttached variant='outline'>
+  <Button mr='-px' colorScheme="gray">Auto</Button>
+  <IconButton aria-label='Switch auto' colorScheme="gray" icon={<FaBolt />} variant={isAuto ? "solid" : "outline"}
             onClick={() => setIsAuto(current => !current)}
-            {...props}  >
-  <Button mr='-px'>Auto</Button>
-  <IconButton aria-label='Switch auto' icon={<FaBolt />} />
+            {...props} />
 </ButtonGroup>
 
   

@@ -1,6 +1,6 @@
 import { FC } from "react";
 import NextLink from "next/link";
-import { Text, Flex, HStack, IconButton, Link, useColorModeValue } from "@chakra-ui/react";
+import { Text, Flex, HStack, IconButton, Link, useColorModeValue, Box, Heading, Container } from "@chakra-ui/react";
 import Image from "next/image";
 import { ColorModeToggler } from ".";
 

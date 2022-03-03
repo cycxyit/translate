@@ -1,6 +1,7 @@
 import { FC } from "react";
 import NextLink from "next/link";
-import { Text, Flex, HStack, IconButton, Link, useColorModeValue, Box, Heading, Container } from "@chakra-ui/react";
+import { Text, Flex, HStack, IconButton, Link, useColorModeValue } from "@chakra-ui/react";
+import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
 import { ColorModeToggler } from ".";
 
@@ -10,42 +11,36 @@ type Props = {
 
 const Header: FC<Props> = (props) => (
     <>
-   
-<Box
-      position="fixed"
-      as="nav"
-      w="100%"
-      bg={useColorModeValue("#ffffff80", "20202380")}
-      zIndex={1}
-      css={{ backdropFilter: "blur(10px)" }}
-      {...props}
-    >
-      <Container
-        display="flex"
-        p={2}
-        maxW="container.md"
-        wrap="wrap"
-        align="center"
-        justify="space-between"
-      >
-        <Flex align="center" mr={5}>
-          <Heading as="h1" size="xl" fontWeight="300" fontFamily="inherit" letterSpacing={"tighter"}>
+    
+
+        <Flex
+            as="header"
+            py={3}
+            justify="space-around"
+            align="center"
+            w="full"
+bg={useColorModeValue("#ffffff80", "20202380")}
+            {...props}
+        >
+            <NextLink href="/" passHref={true}>
+                <Link display="flex">
+                    <Text
+                        fontSize="xl"
+                    >
 Translate
-          </Heading>
-        </Flex>
-        
-        <Box align="right">
-          <HStack spacing={1}>
+</Text>
+
+                </Link>
+            </NextLink>
+            <HStack spacing={1}>
                 <ColorModeToggler
                     variant={useColorModeValue("outline", "solid")}
                 />
                
             </HStack>
-          
-        </Box>
-      </Container>
-    </Box>
+        </Flex>
     </>
 );
 
 export default Header;
+

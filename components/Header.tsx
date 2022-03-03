@@ -29,12 +29,12 @@ const Header: FC<Props> = (props) => (
         justify="space-between"
       >
         <Flex align="center" mr={5}>
-          <Heading as="h1" size="xl" fontFamily="inherit" letterSpacing={"tighter"}>
+          <Heading as="h1" size="xl" fontWeight="300" fontFamily="inherit" letterSpacing={"tighter"}>
 Translate
           </Heading>
         </Flex>
         
-        <Box flex={1} align="right">
+        <Box align="right">
           <HStack spacing={1}>
                 <ColorModeToggler
                     variant={useColorModeValue("outline", "solid")}

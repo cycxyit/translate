@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Flex, VStack, Button, Link, useColorModeValue } from "@chakra-ui/react";
+import { Flex, VStack, Button, Link, useColorModeValue, Box, Container } from "@chakra-ui/react";
 import { Header, Footer } from ".";
 
 type Props = {
@@ -21,12 +21,14 @@ const Layout: FC<Props> = ({ children, ...props }) => (
         >
             Skip to content
         </Button>
+<Container maxW="container.lg">
 
         <VStack spacing={8}>
             <Header
                 
             />
-
+<Container maxW="container.lg">
+<Box>
             <Flex
                 as="main"
                 id="main"
@@ -37,11 +39,13 @@ const Layout: FC<Props> = ({ children, ...props }) => (
             >
                 {children}
             </Flex>
-
+</Box>
+</Container>
             <Footer
    my={4}
             />
         </VStack>
+</Container>
     </>
 );
 

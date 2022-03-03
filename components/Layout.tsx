@@ -21,14 +21,14 @@ const Layout: FC<Props> = ({ children, ...props }) => (
         >
             Skip to content
         </Button>
-<Container maxW="container.lg">
+<Container>
 
         <VStack spacing={8}>
             <Header
                 
             />
-<Container maxW="container.lg">
-<Box>
+<Container>
+
             <Flex
                 as="main"
                 id="main"
@@ -39,7 +39,7 @@ const Layout: FC<Props> = ({ children, ...props }) => (
             >
                 {children}
             </Flex>
-</Box>
+
 </Container>
             <Footer
    my={4}

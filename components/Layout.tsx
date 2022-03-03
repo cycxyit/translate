@@ -22,9 +22,9 @@ const Layout: FC<Props> = ({ children, ...props }) => (
             Skip to content
         </Button>
 
-        <VStack minH="100vh" spacing={8}>
+        <VStack spacing={8}>
             <Header
-                colorScheme="gray"
+                colorScheme="gray" my={3}
             />
 
             <Flex
@@ -32,13 +32,14 @@ const Layout: FC<Props> = ({ children, ...props }) => (
                 id="main"
                 flexGrow={1}
                 w="full"
+                my={2}
                 {...props}
             >
                 {children}
             </Flex>
 
             <Footer
-   
+   my={4}
             />
         </VStack>
     </>

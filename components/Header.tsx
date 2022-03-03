@@ -19,7 +19,6 @@ const Header: FC<Props> = (props) => (
             justify="space-around"
             align="center"
             w="full"
-bg={useColorModeValue("#ffffff80", "20202380")}
             {...props}
         >
             <NextLink href="/" passHref={true}>

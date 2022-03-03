@@ -21,13 +21,13 @@ const Layout: FC<Props> = ({ children, ...props }) => (
         >
             Skip to content
         </Button>
-<Container>
+
 
         <VStack spacing={8}>
             <Header
                 
             />
-<Container>
+
 
             <Flex
                 as="main"
@@ -40,12 +40,12 @@ const Layout: FC<Props> = ({ children, ...props }) => (
                 {children}
             </Flex>
 
-</Container>
+
             <Footer
    my={4}
             />
         </VStack>
-</Container>
+
     </>
 );
 

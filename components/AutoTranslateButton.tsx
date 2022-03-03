@@ -28,7 +28,7 @@ const AutoTranslateButton: FC<Props> = ({ onAuto, ...props }) => {
 
   <Button mr='-px' colorScheme="gray" variant={isAuto ? "solid" : "outline"}
             onClick={() => setIsAuto(current => !current)}
-            {...props} >  <Icon as={ FaBolt } />
+            {...props} >  <Icon as={ FaBolt } mr={1}/>
 
  Auto</Button>
 

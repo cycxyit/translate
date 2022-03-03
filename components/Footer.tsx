@@ -19,11 +19,18 @@ const Footer: FC<Props> = (props) => (
         spacing={[1, null, 2]}
         {...props}
     >
-        <Link href="https://github.com/xuwillie/trans/blob/main/LICENSE" isExternal={true}>
+
+        <Link href="https://github.com/xuwillie/trans/blob/main/LICENSE" isExternal={true} my={1}>
             <Text as="span">&#169; {new Date().getFullYear()} Wll Translate</Text>
         </Link>
+  <Link href="https://github.com/xuwillie/trans/" isExternal={true} mt={1}>
+            <Text as="span">View Source</Text>
+        </Link>
         <Text as="span" display={["none", null, "unset"]}>·</Text>
-        <Link href="https://www.gnu.org/licenses/agpl-3.0.html" isExternal={true}>
+<Link href="https://collection.wll.moe" isExternal={true} mt={1}>
+            <Text as="span">More Great OpenSource Software</Text>
+        </Link>
+        <Link href="https://www.gnu.org/licenses/agpl-3.0.html" isExternal={true} mt={1}>
             <Text as="span">Licensed under AGPLv3</Text>
         </Link>
      

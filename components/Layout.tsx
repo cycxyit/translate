@@ -24,7 +24,7 @@ const Layout: FC<Props> = ({ children, ...props }) => (
 
         <VStack spacing={8}>
             <Header
-                colorScheme="gray" my={3}
+                
             />
 
             <Flex

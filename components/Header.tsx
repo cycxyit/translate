@@ -15,7 +15,6 @@ const Header: FC<Props> = (props) => (
 
         <Flex
             as="header"
-            px={1}
             py={3}
             justify="space-around"
             align="center"
@@ -32,7 +31,7 @@ Translate
 
                 </Link>
             </NextLink>
-            <HStack spacing={3}>
+            <HStack spacing={1}>
                 <ColorModeToggler
                     variant={useColorModeValue("outline", "solid")}
                 />

@@ -1,6 +1,5 @@
 import { useState, useEffect, FC } from "react";
 import { Icon,ButtonGroup,Button } from "@chakra-ui/react";
-import { FaBolt } from "react-icons/fa";
 import { localGetItem, localSetItem } from "@utils/storage";
 
 type Props = {
@@ -26,9 +25,9 @@ const AutoTranslateButton: FC<Props> = ({ onAuto, ...props }) => {
 
     return (
 
-  <Button p={1} colorScheme="gray" variant={isAuto ? "solid" : "outline"}
+  <Button colorScheme="gray" variant={isAuto ? "solid" : "outline"}
             onClick={() => setIsAuto(current => !current)}
-            {...props} >  <Icon as={ FaBolt } mr={1}/>
+            {...props} >
 
  Auto</Button>
 

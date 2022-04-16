@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Stack, Text, Link } from "@chakra-ui/react";
+import { Stack, Text, Link, Code } from "@chakra-ui/react";
 
 type Props = {
     [key: string]: any
@@ -32,7 +32,9 @@ const Footer: FC<Props> = (props) => (
         <Link href="https://www.gnu.org/licenses/agpl-3.0.html" isExternal={true} mt={1}>
             <Text as="span">Licensed under AGPLv3</Text>
         </Link>
-     
+     <Link href="https://icp.gov.moe/?keyword=20228042" isExternal={true} mt={1} colorScheme="telegram">
+            <Code as="span">Moe ICP: 20228042</Code>
+        </Link>
     </Stack>
 );
 

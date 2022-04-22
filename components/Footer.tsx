@@ -22,18 +22,12 @@ const Footer: FC<Props> = (props) => (
 
         <Link href="https://github.com/xuwillie/trans/blob/main/LICENSE" isExternal={true} mt={1}>
             <Text as="span">&#169; {new Date().getFullYear()} Wll Translate</Text>
-        </Link>
-  <Link href="https://github.com/xuwillie/trans/" isExternal={true} mt={1}>
-            <Text as="span">View Source</Text>
         </Link> 
 <Link href="https://collection.wll.moe" isExternal={true} mt={1}>
             <Text as="span">Recommend Software</Text>
         </Link>
         <Link href="https://www.gnu.org/licenses/agpl-3.0.html" isExternal={true} mt={1}>
             <Text as="span">Licensed under AGPLv3</Text>
-        </Link>
-     <Link href="https://icp.gov.moe/?keyword=20228042" isExternal={true} mt={1} colorScheme="telegram">
-            <Code as="span">Moe ICP: 20228042</Code>
         </Link>
     </Stack>
 );

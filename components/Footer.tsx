@@ -23,9 +23,6 @@ const Footer: FC<Props> = (props) => (
         <Link href="https://github.com/xuwillie/trans/blob/main/LICENSE" isExternal={true} mt={1}>
             <Text as="span">&#169; {new Date().getFullYear()} Wll Translate</Text>
         </Link> 
-<Link href="https://collection.wll.moe" isExternal={true} mt={1}>
-            <Text as="span">Recommend Software</Text>
-        </Link>
         <Link href="https://www.gnu.org/licenses/agpl-3.0.html" isExternal={true} mt={1}>
             <Text as="span">Licensed under AGPLv3</Text>
         </Link>

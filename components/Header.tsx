@@ -26,7 +26,7 @@ const Header: FC<Props> = (props) => (
                     <Text
                         fontSize="xl"
                     >
-Translate
+This is a translator
 </Text>
 
                 </Link>

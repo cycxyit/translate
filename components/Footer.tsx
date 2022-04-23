@@ -29,6 +29,9 @@ const Footer: FC<Props> = (props) => (
         <Link href="https://www.gnu.org/licenses/agpl-3.0.html" isExternal={true} mt={1}>
             <Text as="span">Licensed under AGPLv3</Text>
         </Link>
+        <Link href="blog.cycxtit.top" isExternal={true} mt={1}>
+            <Text as="span">程源の小站</Text>
+        </Link>
     </Stack>
 );
 
